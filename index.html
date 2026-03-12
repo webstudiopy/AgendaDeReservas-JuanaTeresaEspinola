@@ -59,10 +59,10 @@
               Agenda de reservas
             </h1>
 
-            <p class="hero-text text-center text-lg-start">
-              Consultá fechas, registrá reservas, finalizá eventos y cancelá fechas sin duplicados.
-              Cuando una fecha ya está tomada, el sistema te avisa al instante por quién está reservada.
-            </p>
+           <p class="hero-text text-justify">
+  Consultá fechas, registrá reservas, finalizá eventos y cancelá fechas sin duplicados.
+  Cuando una fecha ya está tomada, el sistema te avisa al instante por quién está reservada.
+</p>
 
             <div class="hero-points">
               <div class="hero-point">
@@ -196,10 +196,6 @@
                 Guardar reserva
               </button>
 
-              <button type="button" class="btn btn-danger" id="btnClearCancelled">
-                <i class="bi bi-trash3 me-2"></i>
-                Limpiar cancelados
-              </button>
 
               <button type="button" class="btn btn-outline-secondary" id="btnCancelEdit">
                 Cancelar edición
@@ -210,33 +206,42 @@
       </div>
 
       <div class="col-xl-7">
-        <section class="panel-card h-100">
+ <section class="panel-card h-100">
 
-          <div class="section-head mb-4 flex-wrap gap-3 align-items-start">
-            <div>
-              <span class="section-label">Reservas</span>
-              <h2>Agenda general</h2>
-              <p>
-                Podés buscar, editar, finalizar o cancelar.
-                Las canceladas liberan la fecha para volver a usarla.
-              </p>
-            </div>
+  <div class="section-head mb-4 flex-wrap gap-3 align-items-start">
+    <div>
+      <span class="section-label">Reservas</span>
+      <h2>Agenda general</h2>
+      <p>
+        Podés buscar, editar, finalizar o cancelar.
+        Las canceladas liberan la fecha para volver a usarla.
+      </p>
+    </div>
 
-            <div class="search-box">
-              <i class="bi bi-search"></i>
-              <input type="text" id="searchInput" placeholder="Buscar cliente, teléfono o evento...">
-            </div>
-          </div>
+    <div class="search-box">
+      <i class="bi bi-search"></i>
+      <input type="text" id="searchInput" placeholder="Buscar cliente, teléfono o evento...">
+    </div>
+  </div>
 
-          <div class="filters-bar mb-3">
-            <button class="filter-chip active" data-filter="todos">Todos</button>
-            <button class="filter-chip" data-filter="reservado">Reservados</button>
-            <button class="filter-chip" data-filter="finalizado">Finalizados</button>
-            <button class="filter-chip" data-filter="cancelado">Cancelados</button>
-          </div>
+  <div class="filters-bar mb-3">
+    <button class="filter-chip active" data-filter="todos">Todos</button>
+    <button class="filter-chip" data-filter="reservado">Reservados</button>
+    <button class="filter-chip" data-filter="finalizado">Finalizados</button>
+    <button class="filter-chip" data-filter="cancelado">Cancelados</button>
+  </div>
 
-          <div id="cardsContainer" class="cards-grid"></div>
-        </section>
+  <div id="cardsContainer" class="cards-grid"></div>
+
+  <!-- BOTÓN ABAJO -->
+  <div class="text-center mt-4">
+    <button class="btn btn-danger" id="btnClearCancelled">
+      <i class="bi bi-trash3 me-2"></i>
+      Limpiar cancelados
+    </button>
+  </div>
+
+</section>
       </div>
 
     </div>

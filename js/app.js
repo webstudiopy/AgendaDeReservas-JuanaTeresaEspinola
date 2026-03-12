@@ -336,7 +336,10 @@ function fillForm(booking) {
   els.notas.value = booking.notas || '';
   els.btnSaveBooking.innerHTML = '<i class="bi bi-arrow-repeat me-2"></i>Actualizar reserva';
 
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.getElementById('bookingForm').scrollIntoView({
+  behavior: 'smooth',
+  block: 'start'
+});
 
   showAlert(
     els.formAlert,

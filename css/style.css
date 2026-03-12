@@ -608,3 +608,14 @@ textarea.form-control {
     min-width: 100%;
   }
 }
+
+.text-justify{
+  text-align: justify;
+}
+.hero-text{
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: #5f5651;
+  max-width: 640px;
+  text-align: justify;
+}
